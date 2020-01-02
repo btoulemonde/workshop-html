@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>contact</title>
+</head>
+<body>
+    <header>
+        <h1>Formulaire de contact</h1>
+        </header>
+        <nav>
+            <form action="/send_contact" method="post"></form>
+            <ul>
+                <li>Nom <input type="text" name="nom"></li>
+                <li>Prénom <input type="text" name="prénom"></li>
+                <li>Email <input type="email" name="email"></li>
+                <li>Numéro de téléphone <input type="tel" name="numéroTéléphone"></li>
+                <li>Canal de contact préféré <select id="Canal de contact">
+                    <option value="Email">Email</option>
+                    <option value="éléphone">Téléphone</option>
+                    </select>
+                    <li>Message <input type="text" name="message" ></li>
+
+            </ul>
+        </nav>
+</body>
+</html>
