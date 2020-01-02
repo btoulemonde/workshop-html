@@ -19,25 +19,25 @@
             <form action="/send_contact" method="post">
             
                 <label for="nom">nom</label>
-                <input type="text" name="nom">
+                <input type="text" name="nom" id="nom">
                 <br>
                 <label for="prenom">prenom</label>
-                <input type="text" name="prenom">
+                <input type="text" name="prenom" id="prenom">
                 <br>
                 <label for="email">Email</label>
-               <input type="email" name="email">
+               <input type="email" name="email" id="email">
                <br>
                <label for="telephone">numéro de téléphone</label>
-                <input type="tel" name="telephone">
+                <input type="tel" name="telephone" id="telephone">
                 <br>
                 <label for="canal">Canal de contact préféré </label>
                 <select id="canal">
                     <option value="Email">Email</option>
-                    <option value="éléphone">Téléphone</option>
+                    <option value="téléphone">Téléphone</option>
                     </select>
                     <br>
                     <label for="message">Message</label>
-                   <input type="text" name="message" >
+                   <input type="textarea" name="message" id="message" >
                     <br>
             
             <button type="submit">Valider</button>
