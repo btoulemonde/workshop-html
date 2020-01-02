@@ -11,19 +11,37 @@
         <h1>Formulaire de contact</h1>
         </header>
         <nav>
-            <form action="/send_contact" method="post"></form>
             <ul>
-                <li>Nom <input type="text" name="nom"></li>
-                <li>Prénom <input type="text" name="prénom"></li>
-                <li>Email <input type="email" name="email"></li>
-                <li>Numéro de téléphone <input type="tel" name="numéroTéléphone"></li>
-                <li>Canal de contact préféré <select id="Canal de contact">
+                <li><a href="index.html">Accueil</a></li>
+            </ul>
+            </nav>
+        <nav>
+            <form action="/send_contact" method="post">
+            
+                <label for="nom">nom</label>
+                <input type="text" name="nom">
+                <br>
+                <label for="prenom">prenom</label>
+                <input type="text" name="prenom">
+                <br>
+                <label for="email">Email</label>
+               <input type="email" name="email">
+               <br>
+               <label for="telephone">numéro de téléphone</label>
+                <input type="tel" name="telephone">
+                <br>
+                <label for="canal">Canal de contact préféré </label>
+                <select id="canal">
                     <option value="Email">Email</option>
                     <option value="éléphone">Téléphone</option>
                     </select>
-                    <li>Message <input type="text" name="message" ></li>
+                    <br>
+                    <label for="message">Message</label>
+                   <input type="text" name="message" >
 
-            </ul>
+            
+            <button type="submit">Valider</button>
+        </form>
         </nav>
 </body>
 </html>
